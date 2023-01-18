@@ -19,7 +19,7 @@
 
     <!-- Define your beans here -->
     <bean id="myCoach" 
-    	class="com.ibaqu.springdemo.TrackCoach">
+    	class="com.ibaqu.springdemo.SwimmingCoach">
     </bean>
     
 </beans>
