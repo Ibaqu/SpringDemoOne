@@ -16,10 +16,17 @@
     	<property name="rootLoggerLevel" value="FINE" />
     	<property name="printedLoggerLevel" value="FINE"/>
     </bean>
-
+    
+    <!-- Define dependency for fortune service -->
+    <bean id = "myFortune" class="com.ibaqu.springdemo.HappyFortuneService"/>
+    
+    
     <!-- Define your beans here -->
     <bean id="myCoach" 
     	class="com.ibaqu.springdemo.SwimmingCoach">
+    	
+    	<!--  Set up constructor injection -->
+    	<constructor-arg ref="myFortune"/>
     </bean>
     
 </beans>
