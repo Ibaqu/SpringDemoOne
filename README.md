@@ -11,4 +11,6 @@
 ## Exercise 2
 
 - Learned how to make use of Spring Dependency injection by defining a new bean linking a 'Happy Fortune' class 
-- The new bean becomes a `constructor-arg` in the `applicationContext.xml` file. 
+	- The new bean makes use of a `constructor-arg` in the `applicationContext.xml` file. 
+- Learned how to make use of Spring Setter injection by defining a new bean linking it to the Cricket Coach class
+	- The new bean makes use of a `property` in the `applicationContext.xml` file.

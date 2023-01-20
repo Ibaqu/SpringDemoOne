@@ -18,7 +18,7 @@
     </bean>
     
     <!-- Define dependency for fortune service -->
-    <bean id = "myFortune" class="com.ibaqu.springdemo.HappyFortuneService"/>
+    <bean id = "myFortuneService" class="com.ibaqu.springdemo.HappyFortuneService"/>
     
     
     <!-- Define your beans here -->
@@ -26,7 +26,15 @@
     	class="com.ibaqu.springdemo.SwimmingCoach">
     	
     	<!--  Set up constructor injection -->
-    	<constructor-arg ref="myFortune"/>
+    	<constructor-arg ref="myFortuneService"/>
+    </bean>
+    
+    
+    <bean id = "myCricketCoach" class = "com.ibaqu.springdemo.CricketCoach">
+    
+    	<!--  Setup setter injection -->
+    	<property name = "fortuneService" ref = "myFortuneService" /> 
+    
     </bean>
     
 </beans>
